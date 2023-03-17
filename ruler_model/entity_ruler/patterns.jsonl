@@ -1,0 +1,39 @@
+{"label":"surgery","pattern":"acute cholangitis"}
+{"label":"surgery","pattern":"appendectomy"}
+{"label":"surgery","pattern":"laser capsulotomy"}
+{"label":"surgery","pattern":"surgisis xenograft"}
+{"label":"surgery","pattern":"tonsillectomy"}
+{"label":"surgery","pattern":"appendicitis"}
+{"label":"surgery","pattern":"cholecystectomy"}
+{"label":"surgery","pattern":"sclerotomies"}
+{"label":"internalMedicine","pattern":"hyperlipidemia"}
+{"label":"internalMedicine","pattern":"hydrocephalus"}
+{"label":"internalMedicine","pattern":"asthma"}
+{"label":"internalMedicine","pattern":"hypertension"}
+{"label":"internalMedicine","pattern":"pulmonary embolism"}
+{"label":"internalMedicine","pattern":"diabetes emphysema"}
+{"label":"internalMedicine","pattern":"congestive heart failure"}
+{"label":"internalMedicine","pattern":"urinary tract infection"}
+{"label":"internalMedicine","pattern":"atrial fibrillation, congestive heart failure"}
+{"label":"internalMedicine","pattern":"stroke"}
+{"label":"internalMedicine","pattern":"kidney failure"}
+{"label":"medication","pattern":"marcaine"}
+{"label":"medication","pattern":"albuterol inhaler"}
+{"label":"medication","pattern":"pacerone tetracyline"}
+{"label":"medication","pattern":"benadryl"}
+{"label":"medication","pattern":"zaroxolyn"}
+{"label":"medication","pattern":"ibuprofen"}
+{"label":"medication","pattern":"tylenol"}
+{"label":"medication","pattern":"epinephrine"}
+{"label":"medication","pattern":"lasix"}
+{"label":"medication","pattern":"xylicaine"}
+{"label":"medication","pattern":"neurontin"}
+{"label":"obstetricsGynecology","pattern":"abnormal uterine bleeding"}
+{"label":"obstetricsGynecology","pattern":"gestational diabetes"}
+{"label":"obstetricsGynecology","pattern":"vaginal side wall alceration"}
+{"label":"obstetricsGynecology","pattern":"preeclampsia"}
+{"label":"obstetricsGynecology","pattern":"vasomotor symptoms"}
+{"label":"obstetricsGynecology","pattern":"uterine fibroids"}
+{"label":"obstetricsGynecology","pattern":"eclampsia"}
+{"label":"obstetricsGynecology","pattern":"hysterectomy irregular vaginal bleeding"}
+{"label":"obstetricsGynecology","pattern":"vaginal hysteretomy"}

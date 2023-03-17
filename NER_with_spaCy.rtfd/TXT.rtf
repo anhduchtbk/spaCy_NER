@@ -1,0 +1,62 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2708
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww31880\viewh18680\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc\partightenfactor0
+
+\f0\fs46 \cf0 NER with spaCy\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs42 \cf0 C\'e1c b\uc0\u432 \u7899 c th\u7921 c thi c\u7911 a m\'f4 h\'ecnh bao g\u7891 m:\
+- Ti\uc0\u7873 n x\u7917  l\'fd t\u7853 p d\u7919  li\u7879 u ( preprocessing dataset)\
+- \uc0\u273 \u7883 nh ngh\u297 a mi\u7873 n th\u7921 c th\u7875  v\u7899 i ki\u7875 u t\u432 \u417 ng \u7913 ng ( defining domain-specific entities and types)\
+- t\uc0\u7841 o t\u7853 p d\u7919  li\u7879 u ch\'fa th\'edch ( generating annotated dataset )\
+- kh\uc0\u7903 i t\u7841 o v\'e0 hu\u7845 n luy\u7879 n m\'f4 h\'ecnh NER ( creating and trainning NER model)\
+- \uc0\u273 \'e1nh gi\'e1 m\'f4 h\'ecnh NER ( evaluating NER model )\
+- m\uc0\u7903  r\u7897 ng m\'f4 h\'ecnh NER ( extending NER model )\
+- d\uc0\u7921  \u273 o\'e1n v\'e0 tr\u7921 c quan h\'f3a th\u7921 c th\u7875  \u273 \u432 \u7907 c \u273 \u7863 t t\'ean ( predicting and visualizing named entities )\
+\
+\
+
+\f1\b 1. Ti\uc0\u7873 n x\u7917  l\'fd d\u7919  li\u7879 u \
+
+\f0\b0 - M\'f4 h\'ecnh s\uc0\u7917  d\u7909 ng d\u7919  li\u7879 u t\u7915  Kaggle, d\u7919  li\u7879 u ch\u432 a trong file mtsamples.csv. ban \u273 \u7847 u trong t\u7853 p d\u7919  li\u7879 u c\'f3 40 lo\u7841 i thu\u7889 c ri\'eang bi\u7879 t trong t\u7853 p d\u7919  li\u7879 u. Trong m\'f4 h\'ecnh n\'e0y ch\'fang ta theo 9 lo\u7841 i \u273 \u432 \u7907 c l\u7885 c trong t\u7853 p d\u7919  li\u7879 u nh\u432  sau:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Screenshot 2023-03-10 at 18.36.57.png \width8400 \height4380 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc\partightenfactor0
+
+\fs42 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b \cf0 2. \uc0\u272 \u7883 nh ngh\u297 a mi\u7873 n th\u7921 c th\u7875  v\'e0 lo\u7841 i t\u432 \u417 ng \u7913 ng\
+
+\f0\b0 - T\uc0\u7915 ng th\u7921 c th\u7875  \u273 \u432 \u7907 c g\'e1n nh\'e3n. C\'e1c th\u7921 c th\u7875  s\u7869  \u273 \u432 \u7907 c chus th\'edch v\u7899 i lo\u7841 i mi\u7873 n th\u7921 c th\u7875  t\u432 \u417 ng \u7913 ng
+\fs24 {{\NeXTGraphic Screenshot 2023-03-10 at 19.59.51.png \width14620 \height9520 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}
+\fs42 \
+- trong th\uc0\u7921 c t\u7871  th\u7921 c th\u7875  t\u432 \u417 ng \u7913 ng t\u432 \u417 ng \u7913 ng t\u7915 ng lo\u7841 i th\u7921 c th\u7875  \u273 \u432 \u7907 c l\u432 u tr\u7919  trong m\u7897 t t\u7853 p h\u7907 p:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Screenshot 2023-03-10 at 20.06.47.png \width15120 \height3080 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs42 \cf0 \
+\
+3. T\uc0\u7841 o ch\'fa th\'edch cho t\u7853 p d\u7919  li\u7879 u\
+- \uc0\u272 \u7875  luy\u7879 n v\'e0 ki\u7875 m tra m\u7897 t m\'f4 h\'ecnh spaCy NER, t\u7915 ng v\u259 n b\u7843 n ch\u7913 a th\u7921 c th\u7875  c\u7847 n ph\u7843 i \u273 \u432 \u7907 c g\'e1n nh\'e3n v\u7899 i v\u259 n b\u7843 n ch\'fa th\'edch\
+- trong ph\uc0\u7847 n tr\u432 \u7899 c c\'e1c lo\u7841 i v\'e0 th\u7921 c th\u7875  thu\u7897 c lo\u7841 i \u273 \'f3 \u273 \'e3 \u273 \u432 \u7907 c ch\u7881  ra, m\u7897 t t\u7853 p v\u259 n b\u7843 n ch\'fa th\'edch c\'f3 th\u7875  \u273 \u432 \u7907 c t\u7921  \u273 \u7897 ng t\u7841 o ra theo:\
+	+ 	t\uc0\u7841 o m\u7897 t quy lu\u7853 t m\'f4 h\'ecnh th\u7921 c th\u7875  Spacy s\u7917  d\u7909 ng \u273 \u7875  ch\u7881  ra th\u7921 c th\u7875  v\'e0 lo\u7841 i t\u432 \u417 ng \u7913 ng\
+	+ 	s\uc0\u7917  d\u7909 ng m\'f4 h\'ecnh lu\u7853 t th\u7921 c th\u7875  \u273 \u7875  t\'ecm v\u7883  tr\'ed v\'e0 lo\u7841 i c\u7911 a t\u7915 ng th\u7921 c th\u7875  t\u7915  m\u7897 t v\u259 n b\u7843 n\
+	+	s\uc0\u7917  d\u7909 ng v\'ed tr\'ed, lo\u7841 i v\'e0 m\u7851 u \u7903  tr\'ean \u273 \u7875  g\'e1n nh\'e3n cho v\u259 n b\u7843 n \
+- M\uc0\u7897 t m\'f4 h\'ecnh lu\u7853 t th\u7921 c th\u7875  c\'f3 th\u7875  \u273 \u432 \u7907 c t\u7841 o theo ba b\u432 \u7899 c:\
+	+	t\uc0\u7841 o m\'f4 h\'ecnh r\u7895 ng cho m\u7897 t ng\'f4n ng\u7919  t\u432 \u417 ng \u7913 ng\
+	+	th\'eam m\uc0\u7897 t th\'e0nh ph\u7847 n (thu\u7897 c t\'ednh) entity_ruler v\'e0o trong m\'f4 h\'ecnh\
+	+	t\uc0\u7841 o lu\u7853 t th\u7921 c th\u7875  (theo m\u7851 u) v\'e0 th\'eam v\'e0o entity_ruler\
+4. Kh\uc0\u7903 i t\u7841 o v\'e0 luy\u7879 n m\'f4 h\'ecnh NER 			\
+- Gi\uc0\u7889 ng v\u7899 i m\'f4 h\'ecnh lu\u7853 t th\u7921 c th\u7875 , m\'f4 h\'ecnh spaCy NER \u273 \u432 \u7907 c t\u7841 o qua 2 b\u432 \u7899 c\
+	+	t\uc0\u7841 o m\'f4 h\'ecnh r\u7895 ng v\u7899 i m\u7897 t ng\'f4n ng\u7919  \
+	+	th\'eam m\uc0\u7897 t th\'e0nh ph\u7847 n (thu\u7897 c t\'ednh) ner v\'e0o m\'f4 h\'ecnh\
+- Khi m\uc0\u7897 t m\'f4 h\'ecnh NER \u273 \u432 \u7907 c t\u7841 o, s\u7917  d\u7909 ng ph\u432 \u417 ng th\u7913 c fit() c\u7911 a l\u7899 p NERmodel c\'f3 th\u7875  b\u7855 t \u273 \u7847 u luy\u7879 n v\u7899 i t\u7853 p d\u7919  li\u7879 u hu\u7845 n luy\u7879 n		\
+}
