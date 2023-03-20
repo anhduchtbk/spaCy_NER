@@ -2,10 +2,11 @@ import spacy
 from spacy.util import minibatch
 from spacy.scorer import Scorer
 from tqdm import tqdm
+from spacy.training import Example
 import random
 from Annotated_Dataset import RulerModel, GenerateDataset
 import pandas as pd
-import ruler_model as rl
+# import ruler_model as rl
 
 class NERModel():
     def __init__(self, iterations=10):
