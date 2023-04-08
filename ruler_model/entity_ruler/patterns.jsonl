@@ -1,39 +1,387 @@
-{"label":"surgery","pattern":"appendicitis"}
-{"label":"surgery","pattern":"appendectomy"}
-{"label":"surgery","pattern":"surgisis xenograft"}
-{"label":"surgery","pattern":"tonsillectomy"}
-{"label":"surgery","pattern":"laser capsulotomy"}
-{"label":"surgery","pattern":"acute cholangitis"}
-{"label":"surgery","pattern":"sclerotomies"}
-{"label":"surgery","pattern":"cholecystectomy"}
-{"label":"internalMedicine","pattern":"congestive heart failure"}
-{"label":"internalMedicine","pattern":"pulmonary embolism"}
-{"label":"internalMedicine","pattern":"asthma"}
-{"label":"internalMedicine","pattern":"hyperlipidemia"}
-{"label":"internalMedicine","pattern":"atrial fibrillation, congestive heart failure"}
-{"label":"internalMedicine","pattern":"hydrocephalus"}
-{"label":"internalMedicine","pattern":"kidney failure"}
-{"label":"internalMedicine","pattern":"urinary tract infection"}
-{"label":"internalMedicine","pattern":"hypertension"}
-{"label":"internalMedicine","pattern":"stroke"}
-{"label":"internalMedicine","pattern":"diabetes emphysema"}
-{"label":"medication","pattern":"benadryl"}
-{"label":"medication","pattern":"marcaine"}
-{"label":"medication","pattern":"neurontin"}
-{"label":"medication","pattern":"xylicaine"}
-{"label":"medication","pattern":"ibuprofen"}
-{"label":"medication","pattern":"lasix"}
-{"label":"medication","pattern":"zaroxolyn"}
-{"label":"medication","pattern":"epinephrine"}
-{"label":"medication","pattern":"tylenol"}
-{"label":"medication","pattern":"albuterol inhaler"}
-{"label":"medication","pattern":"pacerone tetracyline"}
-{"label":"obstetricsGynecology","pattern":"eclampsia"}
-{"label":"obstetricsGynecology","pattern":"uterine fibroids"}
-{"label":"obstetricsGynecology","pattern":"abnormal uterine bleeding"}
-{"label":"obstetricsGynecology","pattern":"vasomotor symptoms"}
-{"label":"obstetricsGynecology","pattern":"preeclampsia"}
-{"label":"obstetricsGynecology","pattern":"vaginal side wall alceration"}
-{"label":"obstetricsGynecology","pattern":"vaginal hysteretomy"}
-{"label":"obstetricsGynecology","pattern":"gestational diabetes"}
-{"label":"obstetricsGynecology","pattern":"hysterectomy irregular vaginal bleeding"}
+{"label":"LOCATION","pattern":"Ngh\u1ec7 An"}
+{"label":"LOCATION","pattern":"H\u00e0 N\u1ed9i"}
+{"label":"LOCATION","pattern":"b\u1ec7nh vi\u1ec7n"}
+{"label":"LOCATION","pattern":"Cao B\u1eb1ng"}
+{"label":"LOCATION","pattern":"B\u1ec7nh vi\u1ec7n Queen Mary"}
+{"label":"LOCATION","pattern":"Q.B\u00ecnh T\u00e2n"}
+{"label":"LOCATION","pattern":"B\u1eafc Kinh"}
+{"label":"LOCATION","pattern":"L\u1ea1ng S\u01a1n"}
+{"label":"LOCATION","pattern":"671 Ho\u00e0ng Hoa Th\u00e1m"}
+{"label":"LOCATION","pattern":"H\u00e0 T\u0129nh"}
+{"label":"LOCATION","pattern":"Khu \u0111\u00f4 th\u1ecb Vinhomes Gardenia"}
+{"label":"LOCATION","pattern":"ch\u00e2u Phi"}
+{"label":"LOCATION","pattern":"Ch\u00e2u Phi"}
+{"label":"LOCATION","pattern":"khoa C\u1ea5p c\u1ee9u B\u1ec7nh vi\u1ec7n Nh\u00e2n d\u00e2n Gia \u0110\u1ecbnh"}
+{"label":"LOCATION","pattern":"B\u1eafc Giang"}
+{"label":"LOCATION","pattern":"b\u1ec7nh vi\u1ec7n qu\u1eadn"}
+{"label":"LOCATION","pattern":"H\u1ea3i D\u01b0\u01a1ng"}
+{"label":"LOCATION","pattern":"Qu\u1ea3ng Ng\u00e3i"}
+{"label":"LOCATION","pattern":"B\u00e0 R\u1ecba - V\u0169ng T\u00e0u"}
+{"label":"LOCATION","pattern":"Qu\u1ea3ng Ninh"}
+{"label":"LOCATION","pattern":"\u0110\u1ed3ng Th\u00e1p"}
+{"label":"LOCATION","pattern":"B\u00ecnh Ph\u01b0\u1edbc"}
+{"label":"LOCATION","pattern":"Nam \u0110\u1ecbnh"}
+{"label":"LOCATION","pattern":"Th\u00e1i B\u00ecnh"}
+{"label":"LOCATION","pattern":"B\u1ebfn Tre"}
+{"label":"LOCATION","pattern":"T\u00e2y Ninh"}
+{"label":"LOCATION","pattern":"\u0110\u1ed3ng Nai"}
+{"label":"LOCATION","pattern":"T\u00e2y Th\u00e1i B\u00ecnh D\u01b0\u01a1ng"}
+{"label":"LOCATION","pattern":"B\u1ec7nh vi\u1ec7n \u0111a khoa t\u1ec9nh"}
+{"label":"LOCATION","pattern":"V\u0129nh Ph\u00fac"}
+{"label":"LOCATION","pattern":"Kh\u00e1nh H\u00f2a"}
+{"label":"LOCATION","pattern":"\u0110\u1eafk L\u1eafk"}
+{"label":"LOCATION","pattern":"B\u1ec7nh vi\u1ec7n Qu\u00e2n y 175"}
+{"label":"LOCATION","pattern":"Qu\u1ea3ng Nam"}
+{"label":"LOCATION","pattern":"\u0110\u00e0 N\u1eb5ng"}
+{"label":"LOCATION","pattern":"ph\u00eda b\u1eafc"}
+{"label":"LOCATION","pattern":"Vi\u1ec7t Nam"}
+{"label":"LOCATION","pattern":"\u0110i\u1ec7n Bi\u00ean"}
+{"label":"LOCATION","pattern":"ch\u00e2u \u00c2u"}
+{"label":"LOCATION","pattern":"B\u1ec7nh vi\u1ec7n R\u0103ng h\u00e0m m\u1eb7t Trung \u01b0\u01a1ng TP.HCM"}
+{"label":"LOCATION","pattern":"H\u00e0 Nam"}
+{"label":"LOCATION","pattern":"ch\u00e2u \u00c1,"}
+{"label":"LOCATION","pattern":"TP.Tuy H\u00f2a"}
+{"label":"LOCATION","pattern":"H\u00f2a B\u00ecnh"}
+{"label":"LOCATION","pattern":"b\u1ec7nh vi\u1ec7n \u1edf C\u1ee7 Chi"}
+{"label":"LOCATION","pattern":"B\u1eafc Ninh"}
+{"label":"LOCATION","pattern":"Li\u00ean ch\u00e2u"}
+{"label":"LOCATION","pattern":"B\u00ecnh D\u01b0\u01a1ng"}
+{"label":"LOCATION","pattern":"TP.H\u00e0 N\u1ed9i"}
+{"label":"LOCATION","pattern":"Gia Lai"}
+{"label":"LOCATION","pattern":"b\u1ec7nh vi\u1ec7n H\u00f9ng V\u01b0\u01a1ng"}
+{"label":"LOCATION","pattern":"Tuy\u00ean Quang"}
+{"label":"LOCATION","pattern":"t\u1ec9nh Qu\u1ea3ng Nam"}
+{"label":"LOCATION","pattern":"S\u01a1n La"}
+{"label":"LOCATION","pattern":"Tri\u1ec1u D\u01b0\u01a1ng"}
+{"label":"LOCATION","pattern":"Ph\u00fa Y\u00ean"}
+{"label":"LOCATION","pattern":"TP.HCM"}
+{"label":"LOCATION","pattern":"ch\u00e2u \u00c1"}
+{"label":"LOCATION","pattern":"C\u1ea7n Th\u01a1"}
+{"label":"LOCATION","pattern":"B\u1ec7nh vi\u1ec7n B\u1ec7nh nhi\u1ec7t \u0111\u1edbi"}
+{"label":"LOCATION","pattern":"Ki\u00ean Giang"}
+{"label":"LOCATION","pattern":"B\u1ec7nh vi\u1ec7n Ch\u1ee3 R\u1eaby"}
+{"label":"LOCATION","pattern":"Thanh H\u00f3a"}
+{"label":"LOCATION","pattern":"Ph\u00fa Th\u1ecd"}
+{"label":"LOCATION","pattern":"L\u00e2m \u0110\u1ed3ng"}
+{"label":"LOCATION","pattern":"H\u1ea3i Ph\u00f2ng"}
+{"label":"LOCATION","pattern":"H\u00e0 Giang"}
+{"label":"LOCATION","pattern":"TP.Tam K\u1ef3"}
+{"label":"AGE","pattern":"16"}
+{"label":"AGE","pattern":"45"}
+{"label":"AGE","pattern":"63"}
+{"label":"AGE","pattern":"6"}
+{"label":"AGE","pattern":"56"}
+{"label":"AGE","pattern":"12"}
+{"label":"AGE","pattern":"8"}
+{"label":"AGE","pattern":"18"}
+{"label":"AGE","pattern":"25"}
+{"label":"AGE","pattern":"5"}
+{"label":"AGE","pattern":"60"}
+{"label":"AGE","pattern":"51"}
+{"label":"AGE","pattern":"40"}
+{"label":"DATE","pattern":"20.4"}
+{"label":"DATE","pattern":"16.4"}
+{"label":"DATE","pattern":"31.1.2018"}
+{"label":"DATE","pattern":"30.6.2022"}
+{"label":"DATE","pattern":"25.6"}
+{"label":"DATE","pattern":"12.3.2018"}
+{"label":"DATE","pattern":"23.4.2022"}
+{"label":"DATE","pattern":"29.7"}
+{"label":"DATE","pattern":"17.6"}
+{"label":"DATE","pattern":"27.6"}
+{"label":"DATE","pattern":"25.4"}
+{"label":"DATE","pattern":"22.3"}
+{"label":"DATE","pattern":"8.11.2021"}
+{"label":"DATE","pattern":"2.6"}
+{"label":"DATE","pattern":"15.7.2022"}
+{"label":"DATE","pattern":"10.4"}
+{"label":"DATE","pattern":"24.5"}
+{"label":"DATE","pattern":"20.7"}
+{"label":"DATE","pattern":"24.4"}
+{"label":"DATE","pattern":"17.5.2022"}
+{"label":"DATE","pattern":"11.6"}
+{"label":"DATE","pattern":"8.2022"}
+{"label":"DATE","pattern":"28.4.2022"}
+{"label":"DATE","pattern":"7"}
+{"label":"DATE","pattern":"7.6"}
+{"label":"DATE","pattern":"21.6.2021"}
+{"label":"DATE","pattern":"6.7"}
+{"label":"DATE","pattern":"6"}
+{"label":"DATE","pattern":"2.5.2022"}
+{"label":"DATE","pattern":"15.6.2022"}
+{"label":"DATE","pattern":"30.4"}
+{"label":"DATE","pattern":"2.2022"}
+{"label":"DATE","pattern":"22.4"}
+{"label":"DATE","pattern":"9.5"}
+{"label":"DATE","pattern":"1/2018"}
+{"label":"DATE","pattern":"5"}
+{"label":"DATE","pattern":"21.4"}
+{"label":"DATE","pattern":"20.5"}
+{"label":"DATE","pattern":"S\u00e1ng 24.7"}
+{"label":"DATE","pattern":"23.4"}
+{"label":"DATE","pattern":"11.2021"}
+{"label":"DATE","pattern":"26.5"}
+{"label":"DATE","pattern":"5.7"}
+{"label":"DATE","pattern":"chi\u1ec1u 18.7"}
+{"label":"DATE","pattern":"30.6"}
+{"label":"DATE","pattern":"4.2022"}
+{"label":"DATE","pattern":"6.6"}
+{"label":"DATE","pattern":"19.5"}
+{"label":"DATE","pattern":"1.5"}
+{"label":"DATE","pattern":"22.6"}
+{"label":"DATE","pattern":"2.10.2018"}
+{"label":"DATE","pattern":"10.2021"}
+{"label":"DATE","pattern":"12.5"}
+{"label":"DATE","pattern":"12.4.2018"}
+{"label":"DATE","pattern":"11.7"}
+{"label":"DATE","pattern":"3.6"}
+{"label":"DATE","pattern":"12.4"}
+{"label":"DATE","pattern":"31.5"}
+{"label":"DATE","pattern":"22.5"}
+{"label":"DATE","pattern":"24.6"}
+{"label":"DATE","pattern":"10.6"}
+{"label":"DATE","pattern":"4.7"}
+{"label":"DATE","pattern":"17.5"}
+{"label":"DATE","pattern":"31.12.2022"}
+{"label":"DATE","pattern":"24.4.2022"}
+{"label":"DATE","pattern":"29.10.2021"}
+{"label":"DATE","pattern":"12.7"}
+{"label":"DATE","pattern":"26"}
+{"label":"DATE","pattern":"2/2022"}
+{"label":"DATE","pattern":"3"}
+{"label":"DATE","pattern":"13.4"}
+{"label":"DATE","pattern":"14.5"}
+{"label":"DATE","pattern":"1.5.2022"}
+{"label":"DATE","pattern":"1.6.2022"}
+{"label":"DATE","pattern":"10.7"}
+{"label":"DATE","pattern":"27.7"}
+{"label":"DATE","pattern":"6.5"}
+{"label":"DATE","pattern":"9.11.2018"}
+{"label":"DATE","pattern":"4"}
+{"label":"DATE","pattern":"13"}
+{"label":"DATE","pattern":"13.5"}
+{"label":"DATE","pattern":"7.2021"}
+{"label":"DATE","pattern":"15.5"}
+{"label":"DATE","pattern":"26.4.2022"}
+{"label":"DATE","pattern":"23.6"}
+{"label":"DATE","pattern":"th\u00e1ng 4 n\u0103m 2022"}
+{"label":"DATE","pattern":"15.7"}
+{"label":"DATE","pattern":"30.7"}
+{"label":"DATE","pattern":"15.4.2022"}
+{"label":"DATE","pattern":"16.5.2010"}
+{"label":"DATE","pattern":"22.4.2022"}
+{"label":"DATE","pattern":"2022"}
+{"label":"DATE","pattern":"21.6"}
+{"label":"DATE","pattern":"23.6.2022"}
+{"label":"DATE","pattern":"16.5"}
+{"label":"DATE","pattern":"21.5"}
+{"label":"DATE","pattern":"31.3.2022"}
+{"label":"DATE","pattern":"1.9.2016"}
+{"label":"DATE","pattern":"5.2022"}
+{"label":"DATE","pattern":"3.5"}
+{"label":"DATE","pattern":"3.2.2020"}
+{"label":"DATE","pattern":"26.12.2017"}
+{"label":"DATE","pattern":"3.2022"}
+{"label":"DATE","pattern":"26.4"}
+{"label":"DATE","pattern":"25.5"}
+{"label":"DATE","pattern":"29.4"}
+{"label":"DATE","pattern":"27.4.2021"}
+{"label":"DATE","pattern":"16"}
+{"label":"DATE","pattern":"12.2005"}
+{"label":"DATE","pattern":"28.4"}
+{"label":"DATE","pattern":"25.7"}
+{"label":"DATE","pattern":"1.6"}
+{"label":"DATE","pattern":"2.2020"}
+{"label":"DATE","pattern":"27.4"}
+{"label":"DATE","pattern":"2.5"}
+{"label":"DATE","pattern":"12.2021"}
+{"label":"DATE","pattern":"9.12.2019"}
+{"label":"DATE","pattern":"15.4"}
+{"label":"DATE","pattern":"5.5.2022"}
+{"label":"OCCUPATION","pattern":"nh\u00e2n vi\u00ean y t\u1ebf"}
+{"label":"OCCUPATION","pattern":"b\u00e1c s\u0129"}
+{"label":"OCCUPATION","pattern":"C\u1ee5c tr\u01b0\u1edfng C\u1ee5c Y t\u1ebf d\u1ef1 ph\u00f2ng"}
+{"label":"OCCUPATION","pattern":"c\u00e1n b\u1ed9 C\u1ee5c Qu\u1ea3n l\u00fd d\u01b0\u1ee3c"}
+{"label":"OCCUPATION","pattern":"y b\u00e1c s\u0129"}
+{"label":"OCCUPATION","pattern":"\u1ee6y vi\u00ean T.\u01af \u0110\u1ea3ng"}
+{"label":"OCCUPATION","pattern":"Thanh tra Ch\u00ednh ph\u1ee7"}
+{"label":"OCCUPATION","pattern":"B\u1ed9 tr\u01b0\u1edfng Y t\u1ebf"}
+{"label":"OCCUPATION","pattern":"c\u00f4ng an"}
+{"label":"OCCUPATION","pattern":"Gi\u00e1m \u0111\u1ed1c S\u1edf Y t\u1ebf TP.HCM"}
+{"label":"OCCUPATION","pattern":"B\u00e1c s\u0129"}
+{"label":"OCCUPATION","pattern":"ki\u1ec3m d\u1ecbch vi\u00ean y t\u1ebf"}
+{"label":"OCCUPATION","pattern":"\u0111o\u00e0n vi\u00ean"}
+{"label":"OCCUPATION","pattern":"Nh\u00e2n vi\u00ean y t\u1ebf"}
+{"label":"SYSMTOM&DISEASE","pattern":"\u0111\u00e1i th\u00e1o \u0111\u01b0\u1eddng"}
+{"label":"SYSMTOM&DISEASE","pattern":"s\u1ed1c"}
+{"label":"SYSMTOM&DISEASE","pattern":"\u0111au \u0111\u1ea7u"}
+{"label":"SYSMTOM&DISEASE","pattern":"s\u01b0ng"}
+{"label":"SYSMTOM&DISEASE","pattern":"t\u1ee9c ng\u1ef1c"}
+{"label":"SYSMTOM&DISEASE","pattern":"kh\u00f3 th\u1edf"}
+{"label":"SYSMTOM&DISEASE","pattern":"s\u01b0ng m\u1eaft tr\u00e1i"}
+{"label":"SYSMTOM&DISEASE","pattern":"s\u01b0ng v\u00f9ng m\u1eaft tr\u00e1i"}
+{"label":"SYSMTOM&DISEASE","pattern":"ph\u00e1t ban"}
+{"label":"SYSMTOM&DISEASE","pattern":"suy t\u1ea1ng"}
+{"label":"SYSMTOM&DISEASE","pattern":"s\u01b0ng v\u00f9ng m\u1eb7t tr\u00e1i"}
+{"label":"SYSMTOM&DISEASE","pattern":"s\u1ed1t"}
+{"label":"SYSMTOM&DISEASE","pattern":"m\u1ec7t m\u1ecfi"}
+{"label":"TRANSPORTATION","pattern":"80A"}
+{"label":"TRANSPORTATION","pattern":"B\u1ed9 Y t\u1ebf"}
+{"label":"TRANSPORTATION","pattern":"Nam Th\u0103ng Long"}
+{"label":"ORGANIZATION","pattern":"B\u1ed9 C\u00f4ng an"}
+{"label":"ORGANIZATION","pattern":"B\u1ed9 Ngo\u1ea1i giao"}
+{"label":"ORGANIZATION","pattern":"L\u0110L\u0110VN"}
+{"label":"ORGANIZATION","pattern":"BV Ch\u1ee3 R\u1eaby"}
+{"label":"ORGANIZATION","pattern":"WHO"}
+{"label":"ORGANIZATION","pattern":"S\u1edf Y t\u1ebf TP.HCM"}
+{"label":"ORGANIZATION","pattern":"B\u1ed9 Y t\u1ebf Canada"}
+{"label":"ORGANIZATION","pattern":"C\u1ee5c C\u00f4ng ngh\u1ec7 th\u00f4ng tin"}
+{"label":"ORGANIZATION","pattern":"CDC M\u1ef8"}
+{"label":"ORGANIZATION","pattern":"c\u01a1 s\u1edf y t\u1ebf thu\u1ed9c B\u1ed9 Y t\u1ebf"}
+{"label":"ORGANIZATION","pattern":"UBND TP.HCM"}
+{"label":"ORGANIZATION","pattern":"TAND TP.H\u00e0 N\u1ed9i"}
+{"label":"ORGANIZATION","pattern":"UBND TP.H\u00e0 N\u1ed9i"}
+{"label":"ORGANIZATION","pattern":"Trung t\u00e2m D\u1ef1 ph\u00f2ng v\u00e0 Ki\u1ec3m so\u00e1t b\u1ec7nh t\u1eadt M\u1ef9"}
+{"label":"ORGANIZATION","pattern":"B\u1ed9 T\u00e0i ch\u00ednh"}
+{"label":"ORGANIZATION","pattern":"8.12.2017"}
+{"label":"ORGANIZATION","pattern":"BHXH c\u00e1c t\u1ec9nh"}
+{"label":"ORGANIZATION","pattern":"B\u1ec7nh vi\u1ec7n R\u0103ng H\u00e0m M\u1eb7t Trung \u01b0\u01a1ng TP.HCM"}
+{"label":"ORGANIZATION","pattern":"HCDC"}
+{"label":"ORGANIZATION","pattern":"S\u1edf y t\u1ebf TP.HCM"}
+{"label":"ORGANIZATION","pattern":"B\u1ed9 Y t\u1ebf"}
+{"label":"ORGANIZATION","pattern":"B\u1ed9 N\u1ed9i V\u1ee5"}
+{"label":"ORGANIZATION","pattern":"B\u1ed8 Y T\u1ebe"}
+{"label":"ORGANIZATION","pattern":"V\u1ee5 Truy\u1ec1n th\u00f4ng v\u00e0 Thi \u0111ua khen th\u01b0\u1edfng"}
+{"label":"ORGANIZATION","pattern":"CDC M\u1ef9"}
+{"label":"ORGANIZATION","pattern":"\u0110SQ M\u1ef8"}
+{"label":"ORGANIZATION","pattern":"Trung t\u00e2m Ki\u1ec3m so\u00e1t b\u1ec7nh t\u1eadt TP.HCM"}
+{"label":"ORGANIZATION","pattern":"C\u1ee5c Khoa h\u1ecdc c\u00f4ng ngh\u1ec7 v\u00e0 \u0111\u00e0o t\u1ea1o"}
+{"label":"ORGANIZATION","pattern":"H\u0110ND TP.H\u00e0 N\u1ed9i"}
+{"label":"ORGANIZATION","pattern":"B\u00e1o Thanh Ni\u00ean"}
+{"label":"ORGANIZATION","pattern":"Th\u1ea7y thu\u1ed1c tr\u1ebb Vi\u1ec7t Nam"}
+{"label":"ORGANIZATION","pattern":"B\u1ec7nh vi\u1ec7n Qu\u00e2n y 175"}
+{"label":"ORGANIZATION","pattern":"B\u1ec7nh vi\u1ec7n Q.8"}
+{"label":"ORGANIZATION","pattern":"S\u1edf Y t\u1ebf Qu\u1ea3ng Ninh"}
+{"label":"ORGANIZATION","pattern":"C\u1ee5c Y t\u1ebf d\u1ef1 ph\u00f2ng"}
+{"label":"ORGANIZATION","pattern":"B\u1ea3o hi\u1ec3m x\u00e3 h\u1ed9i Vi\u1ec7t Nam"}
+{"label":"ORGANIZATION","pattern":"Vi\u1ec7t Nam"}
+{"label":"ORGANIZATION","pattern":"S\u1edf Y t\u1ebf \u0110\u1eafk N\u00f4ng"}
+{"label":"ORGANIZATION","pattern":"B\u1ec7nh vi\u1ec7n B\u1ec7nh nhi\u1ec7t \u0111\u1edbi,"}
+{"label":"ORGANIZATION","pattern":"S\u1edf Y t\u1ebf t\u1ec9nh B\u00ecnh Ph\u01b0\u1edbc"}
+{"label":"ORGANIZATION","pattern":"B\u1ec7nh vi\u1ec7n R\u0103ng h\u00e0m m\u1eb7t Trung \u01b0\u01a1ng TP.HCM"}
+{"label":"ORGANIZATION","pattern":"T\u1ed5 ch\u1ee9c Y t\u1ebf th\u1ebf gi\u1edbi v\u00e0 Vi\u1ec7n NICE - V\u01b0\u01a1ng Qu\u1ed1c Anh"}
+{"label":"ORGANIZATION","pattern":"S\u1edf Y t\u1ebf B\u1eafc Giang"}
+{"label":"ORGANIZATION","pattern":"TAND C\u1ea5p cao t\u1ea1i TP.HCM"}
+{"label":"ORGANIZATION","pattern":"UBND TP.Th\u1ee7 \u0110\u1ee9c"}
+{"label":"ORGANIZATION","pattern":"B\u1ed9 Giao th\u00f4ng v\u1eadn t\u1ea3i"}
+{"label":"ORGANIZATION","pattern":"B\u1ec7nh vi\u1ec7n Nhi \u0111\u1ed3ng 1"}
+{"label":"ORGANIZATION","pattern":"\u1ee6y ban Y t\u1ebf Qu\u1ed1c gia Trung Qu\u1ed1c"}
+{"label":"ORGANIZATION","pattern":"BHXH Vi\u1ec7t Nam"}
+{"label":"ORGANIZATION","pattern":"c\u01a1 quan ch\u1ee9c n\u0103ng Canada"}
+{"label":"ORGANIZATION","pattern":"T\u1ed5 ch\u1ee9c Y t\u1ebf th\u1ebf gi\u1edbi"}
+{"label":"ORGANIZATION","pattern":"CDC"}
+{"label":"ORGANIZATION","pattern":"B\u1ed9 N\u1ed9i v\u1ee5"}
+{"label":"ORGANIZATION","pattern":"s\u1edf Y t\u1ebf"}
+{"label":"ORGANIZATION","pattern":"C\u1ee5c Qu\u1ea3n l\u00fd kh\u00e1m"}
+{"label":"ORGANIZATION","pattern":"S\u1edf Y t\u1ebf"}
+{"label":"ORGANIZATION","pattern":"B\u1ed9 Th\u00f4ng tin v\u00e0 Truy\u1ec1n th\u00f4ng"}
+{"label":"ORGANIZATION","pattern":"B\u1ec7nh vi\u1ec7n \u0111a khoa"}
+{"label":"ORGANIZATION","pattern":"TP.HCM"}
+{"label":"ORGANIZATION","pattern":"UBND t\u1ec9nh B\u00ecnh Ph\u01b0\u1edbc"}
+{"label":"ORGANIZATION","pattern":"R\u0103ng H\u00e0m M\u1eb7t Trung \u01b0\u01a1ng TP.HCM"}
+{"label":"ORGANIZATION","pattern":"b\u1ed9 y t\u1ebf"}
+{"label":"ORGANIZATION","pattern":"B\u1ec7nh vi\u1ec7n B\u1ec7nh nhi\u1ec7t \u0111\u1edbi"}
+{"label":"ORGANIZATION","pattern":"S\u1edf Y t\u1ebf H\u00e0 N\u1ed9i"}
+{"label":"ORGANIZATION","pattern":"\u1ee6y ban Ki\u1ec3m tra T.\u01af"}
+{"label":"ORGANIZATION","pattern":"Vi\u1ec7n KSND TP.H\u00e0 N\u1ed9i"}
+{"label":"PERSON","pattern":"Quang"}
+{"label":"PERSON","pattern":"Tr\u1ea7n Thanh H\u1ea3i"}
+{"label":"PERSON","pattern":"T\u0103ng Ch\u00ed Th\u01b0\u1ee3ng"}
+{"label":"PERSON","pattern":"L\u00ea S\u1ef9 B\u1ea3y"}
+{"label":"PERSON","pattern":"\u0110\u1eadu Ti\u1ebfn \u0110\u1ea1t"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Vi\u1ec7t H\u00f9ng"}
+{"label":"PERSON","pattern":"C\u01b0\u1eddng"}
+{"label":"PERSON","pattern":"Ph\u1ea1m H\u1ed3ng Ch\u00e2u"}
+{"label":"PERSON","pattern":"\u0110\u00e0o H\u1ed3ng Lan"}
+{"label":"PERSON","pattern":"Ivan Hung"}
+{"label":"PERSON","pattern":"Ph\u1ea1m Thanh Vi\u1ec7t"}
+{"label":"PERSON","pattern":"Tr\u1ea7n C\u1ea9m T\u00fa"}
+{"label":"PERSON","pattern":"Tr\u1ea7n Qu\u1ed1c H\u00f9ng"}
+{"label":"PERSON","pattern":"Bhramar Mukherjee"}
+{"label":"PERSON","pattern":"Lan"}
+{"label":"PERSON","pattern":"\u0110.Q.B"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n V\u0169 Trung"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Nam Li\u00ean"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Gia B\u00ecnh"}
+{"label":"PERSON","pattern":"teoooem"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n L\u00ea Xu\u00e2n Khang"}
+{"label":"PERSON","pattern":"Chu \u0110\u1ee9c H\u1ea3o"}
+{"label":"PERSON","pattern":"L\u00e2n"}
+{"label":"PERSON","pattern":"N.T.T"}
+{"label":"PERSON","pattern":"Eric Dziuban"}
+{"label":"PERSON","pattern":"Hoang Van"}
+{"label":"PERSON","pattern":"Long"}
+{"label":"PERSON","pattern":"T\u00fa"}
+{"label":"PERSON","pattern":"H\u00f9ng"}
+{"label":"PERSON","pattern":"Tr\u1ea7n C\u01b0\u1eddng"}
+{"label":"PERSON","pattern":"Anna Lisa T"}
+{"label":"PERSON","pattern":"V\u0169 \u0110\u1ee9c \u0110am"}
+{"label":"PERSON","pattern":"V\u00f5 M\u1ea1nh C\u01b0\u1eddng"}
+{"label":"PERSON","pattern":"Hung Ngo"}
+{"label":"PERSON","pattern":"Ph\u1ea1m L\u00ea Tu\u1ea5n"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Tr\u01b0\u1eddng S\u01a1n"}
+{"label":"PERSON","pattern":"T.V.T"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Tri Th\u1ee9c"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Ho\u00e0ng Long"}
+{"label":"PERSON","pattern":"Jeremy Lim"}
+{"label":"PERSON","pattern":"Ph\u1ea1m Xu\u00e2n D\u0169ng"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Hi\u1ec1n"}
+{"label":"PERSON","pattern":"Phan Th\u1ecb H"}
+{"label":"PERSON","pattern":"B\u1ea3y"}
+{"label":"PERSON","pattern":"H\u01b0\u01a1ng"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Th\u1ecb Quy\u1ebft"}
+{"label":"PERSON","pattern":"Anh Tu\u1ea5n Nguy\u1ec5n"}
+{"label":"PERSON","pattern":"B"}
+{"label":"PERSON","pattern":"Tr\u1ea7n \u0110\u1eafc Phu"}
+{"label":"PERSON","pattern":"S\u01a1n"}
+{"label":"PERSON","pattern":"Cao Minh Quang"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Th\u1ecb Thu Th\u1ee7y"}
+{"label":"PERSON","pattern":"Ph\u1ea1m L\u01b0\u01a1ng S\u01a1n"}
+{"label":"PERSON","pattern":"Andy Quach"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Th\u1ecb Li\u00ean"}
+{"label":"PERSON","pattern":"Nguy\u00ean Th\u1ecb Thu Thu\u1ef7"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Tu\u1ea5n H\u01b0ng"}
+{"label":"PERSON","pattern":"Chu Ng\u1ecdc Anh"}
+{"label":"PERSON","pattern":"Ng\u00f4 Ng\u1ecdc Quang Minh"}
+{"label":"PERSON","pattern":"T\u1eeb H\u00f2a Ki\u1ebfn"}
+{"label":"PERSON","pattern":"Dung Nguyen"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Th\u1ecb Li\u00ean H\u01b0\u01a1ng"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Minh Tu\u1ea5n"}
+{"label":"PERSON","pattern":"Tuy\u00ean"}
+{"label":"PERSON","pattern":"Phu"}
+{"label":"PERSON","pattern":"H\u01b0ng"}
+{"label":"PERSON","pattern":"Ong-Lim"}
+{"label":"PERSON","pattern":"L\u01b0\u01a1ng V\u0103n H\u00f3a"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Th\u1ecb T"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Minh H\u00f9ng"}
+{"label":"PERSON","pattern":"NGUY\u1ec4N ANH"}
+{"label":"PERSON","pattern":"Dziuban"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Thanh Phong"}
+{"label":"PERSON","pattern":"Tho Nguyen"}
+{"label":"PERSON","pattern":"Phan Tr\u1ecdng L\u00e2n"}
+{"label":"PERSON","pattern":"Tr\u1ea7n V\u0103n B\u00edch"}
+{"label":"PERSON","pattern":"L\u00ea Minh Tr\u00ed"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Thanh Long"}
+{"label":"PERSON","pattern":"\u0110\u1ed7 Xu\u00e2n Tuy\u00ean"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n H\u1eefu T\u00fa"}
+{"label":"PERSON","pattern":"Tr\u01b0\u01a1ng Qu\u1ed1c C\u01b0\u1eddng"}
+{"label":"PERSON","pattern":"Ph\u1ea1m Minh Ch\u00ednh"}
+{"label":"PERSON","pattern":"L\u00ea \u0110\u00ecnh Thanh"}
+{"label":"PERSON","pattern":"Jung Ki-Suck"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Tr\u1ecdng Ngh\u0129a"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Ng\u1ecdc Khang"}
+{"label":"PERSON","pattern":"Tr\u1ea7n Minh Tr\u01b0\u1eddng"}
+{"label":"PERSON","pattern":"Th\u1ee7y"}
+{"label":"PERSON","pattern":"D\u01b0\u01a1ng Huy Li\u1ec7u"}
+{"label":"PERSON","pattern":"Nguy\u1ec5n Hu\u1ef3nh"}
+{"label":"PERSON","pattern":"Ch\u00e2u"}

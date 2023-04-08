@@ -18,10 +18,14 @@
   },
   "labels":{
     "entity_ruler":[
-      "internalMedicine",
-      "medication",
-      "obstetricsGynecology",
-      "surgery"
+      "AGE",
+      "DATE",
+      "LOCATION",
+      "OCCUPATION",
+      "ORGANIZATION",
+      "PERSON",
+      "SYSMTOM&DISEASE",
+      "TRANSPORTATION"
     ]
   },
   "pipeline":[

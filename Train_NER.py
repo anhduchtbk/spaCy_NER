@@ -6,13 +6,18 @@ from spacy.training import Example
 import random
 from Annotated_Dataset import RulerModel, GenerateDataset
 import pandas as pd
-# import ruler_model as rl
+import os
+from Get_Entity_From_File import extract_entities_muc
+from Extract_raw_data_tsv import get_raw_text, write_to_file
+from matplotlib import pyplot as plt
+
 
 class NERModel():
-    def __init__(self, iterations=10):
+    def __init__(self, iterations=50):
         self.n_iter = iterations
         self.ner_model = spacy.blank("en")
         self.ner = self.ner_model.add_pipe('ner', last=True)
+        self.ner_model.initialize() ###
 
     def fit(self, train_data):
         for text, annotations in train_data:
@@ -66,18 +71,76 @@ class NERModel():
         
         return accuracy
     
+def extract_entities_file(folder_path):
+    # folder_path = "/path/to/folder"
+    allowed_extensions = [".muc"]
+    result = []
+    for filename in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, filename)
+        if os.path.isfile(file_path) and os.path.splitext(file_path)[1] in allowed_extensions:
+            result += extract_entities_muc(file_path)
+    return result
 
-surgery = set(['acute cholangitis', 'appendectomy', 'appendicitis', 'cholecystectomy', 'laser capsulotomy', 'surgisis xenograft', 'sclerotomies', 'tonsillectomy'])
-internalMedicine = set(['asthma', 'atrial fibrillation, congestive heart failure', 'congestive heart failure', 'diabetes emphysema', 'hydrocephalus', 'hyperlipidemia', 'hypertension', 'kidney failure', 'pulmonary embolism', 'stroke', 'urinary tract infection'])
-medication = set(['albuterol inhaler', 'benadryl', 'epinephrine', 'ibuprofen', 'lasix', 'marcaine', 'neurontin', 'pacerone tetracyline', 'tylenol', 'xylicaine', 'zaroxolyn'])
-obstestricsGynecology = set(['abnormal uterine bleeding', 'eclampsia', 'gestational diabetes', 'hysterectomy irregular vaginal bleeding', 'preeclampsia', 'uterine fibroids', 'vaginal hysteretomy', 'vaginal side wall alceration', 'vasomotor symptoms'])
+# surgery = set(['acute cholangitis', 'appendectomy', 'appendicitis', 'cholecystectomy', 'laser capsulotomy', 'surgisis xenograft', 'sclerotomies', 'tonsillectomy'])
+# internalMedicine = set(['asthma', 'atrial fibrillation, congestive heart failure', 'congestive heart failure', 'diabetes emphysema', 'hydrocephalus', 'hyperlipidemia', 'hypertension', 'kidney failure', 'pulmonary embolism', 'stroke', 'urinary tract infection'])
+# medication = set(['albuterol inhaler', 'benadryl', 'epinephrine', 'ibuprofen', 'lasix', 'marcaine', 'neurontin', 'pacerone tetracyline', 'tylenol', 'xylicaine', 'zaroxolyn'])
+# obstestricsGynecology = set(['abnormal uterine bleeding', 'eclampsia', 'gestational diabetes', 'hysterectomy irregular vaginal bleeding', 'preeclampsia', 'uterine fibroids', 'vaginal hysteretomy', 'vaginal side wall alceration', 'vasomotor symptoms'])
+location = []
+age = []
+date = []
+occupation = []
+sysmtomanddisease = []
+transportation = []
+organization = []
+person = []
 
-raw_df = pd.read_csv('./mtsamples.csv', index_col=0)
+entities = extract_entities_file('/Users/anhduc/Desktop/PPNKKH_DDD/NER_Data/muc_data_folder')
+
+for index in range(len(entities)):
+    if(entities[index][0] == 'LOCATION'):
+        location.append(entities[index][1])
+    elif(entities[index][0] == 'ORGANIZATION'):
+        organization.append(entities[index][1])
+    elif(entities[index][0] == 'AGE'):
+        age.append(entities[index][1])
+    elif(entities[index][0] == 'DATE'):
+        date.append(entities[index][1])
+    elif(entities[index][0] == 'OCCUPATION'):
+        occupation.append(entities[index][1])
+    elif(entities[index][0] == 'SYSMTOM&DISEASE'):
+        sysmtomanddisease.append(entities[index][1])
+    elif(entities[index][0] == 'TRANSPORTATION'):
+        transportation.append(entities[index][1])
+    elif(entities[index][0] == 'PERSON'):
+        person.append(entities[index][1])
+
+
+location = set(location)
+age = set(age)
+date = set(date)
+occupation = set(occupation)
+sysmtomanddisease = set(sysmtomanddisease)
+transportation = set(transportation)
+organization = set(organization)
+person = set(person)
+
+raw_df = pd.read_csv("/Users/anhduc/Desktop/PPNKKH_DDD/NER_Data/raw_data.txt", delimiter='\t')
 raw_df.head()
 
-rule = RulerModel(surgery, internalMedicine, medication, obstestricsGynecology)
+rule = RulerModel(location, age, date, occupation, sysmtomanddisease, transportation, organization, person)
 annotate = GenerateDataset(rule)
 data = annotate.assign_labels_to_documents(raw_df)
 
 model = NERModel()
 model.fit(data)
+loss_history = [loss['ner'] for loss in model.loss_history]
+plt.title("Model training loss history")
+plt.xlabel('Iteration')
+plt.ylabel('Loss')
+plt.plot(loss_history)
+plt.show()
+
+print(model.accuracy_score([('Theo thông báo của Bộ Y tế, từ đầu dịch đến nay, Việt Nam có 10,759 triệu ca mắc Covid-19, đứng thứ 12/227 quốc gia và vùng lãnh thổ.', {'entities': [(19, 21, 'ORGANIZATION'), (22, 23, "ORGANIZATION"), (24, 26, "ORGANIZATION")]})]))
+
+
+# print(model.loss_history)

@@ -3,22 +3,46 @@ from spacy.lang.en import English
 from spacy.pipeline import EntityRuler
 
 class RulerModel():
-    def __init__(self, surgery, internalMedicine, medication, obstetricsGynecology):
+    def __init__(self, location, age, date, occupation, sysmtomanddisease, transportation, organization, person):
         self.ruler_model = spacy.blank('en')
         self.entity_ruler = self.ruler_model.add_pipe('entity_ruler')
 
         total_patterns = []
 
-        patterns = self.create_patterns(surgery, 'surgery')
+        # patterns = self.create_patterns(surgery, 'surgery')
+        # total_patterns.extend(patterns)
+
+        # patterns = self.create_patterns(internalMedicine, 'internalMedicine')
+        # total_patterns.extend(patterns)
+
+        # patterns = self.create_patterns(medication, 'medication')
+        # total_patterns.extend(patterns)
+
+        # patterns = self.create_patterns(obstetricsGynecology, 'obstetricsGynecology')
+        # total_patterns.extend(patterns)
+
+        patterns = self.create_patterns(location, 'LOCATION')
         total_patterns.extend(patterns)
 
-        patterns = self.create_patterns(internalMedicine, 'internalMedicine')
+        patterns = self.create_patterns(age, 'AGE')
         total_patterns.extend(patterns)
 
-        patterns = self.create_patterns(medication, 'medication')
+        patterns = self.create_patterns(date, 'DATE')
         total_patterns.extend(patterns)
 
-        patterns = self.create_patterns(obstetricsGynecology, 'obstetricsGynecology')
+        patterns = self.create_patterns(occupation, 'OCCUPATION')
+        total_patterns.extend(patterns)
+
+        patterns = self.create_patterns(sysmtomanddisease, 'SYSMTOM&DISEASE')
+        total_patterns.extend(patterns)
+
+        patterns = self.create_patterns(transportation, 'TRANSPORTATION')
+        total_patterns.extend(patterns)
+
+        patterns = self.create_patterns(organization, 'ORGANIZATION')
+        total_patterns.extend(patterns)
+
+        patterns = self.create_patterns(person, 'PERSON')
         total_patterns.extend(patterns)
 
         self.add_patterns_into_ruler(total_patterns)
@@ -50,7 +74,7 @@ class GenerateDataset(object):
     
     def assign_labels_to_documents(self, df):
         dataset = []
-        text_list = df['transcription'].values.tolist()
+        text_list = df['text'].values.tolist()
 
         for text in text_list:
             ents = self.find_entitytypes(text)
