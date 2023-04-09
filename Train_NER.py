@@ -13,9 +13,9 @@ from matplotlib import pyplot as plt
 
 
 class NERModel():
-    def __init__(self, iterations=50):
+    def __init__(self, iterations=2000):
         self.n_iter = iterations
-        self.ner_model = spacy.blank("en")
+        self.ner_model = spacy.blank("vi")
         self.ner = self.ner_model.add_pipe('ner', last=True)
         self.ner_model.initialize() ###
 

@@ -1,10 +1,11 @@
 import spacy
 from spacy.lang.en import English
 from spacy.pipeline import EntityRuler
+from spacy.lang.vi import Vietnamese
 
 class RulerModel():
     def __init__(self, location, age, date, occupation, sysmtomanddisease, transportation, organization, person):
-        self.ruler_model = spacy.blank('en')
+        self.ruler_model = spacy.blank('vi')
         self.entity_ruler = self.ruler_model.add_pipe('entity_ruler')
 
         total_patterns = []
